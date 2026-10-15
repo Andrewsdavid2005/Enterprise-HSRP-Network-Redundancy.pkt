@@ -6,7 +6,7 @@
 ![CCNA](https://img.shields.io/badge/CCNA-Practice-red)
 ![Status](https://img.shields.io/badge/Project-Lab%20Implementation-brightgreen)
 
-## 📌 Project Overview
+## Project Overview
 
 **Enterprise HSRP Network Redundancy** is a Cisco Packet Tracer networking project that demonstrates gateway redundancy using the Hot Standby Router Protocol (HSRP).
 
@@ -16,7 +16,7 @@ One router operates as the active gateway, while another remains on standby. If 
 
 This project demonstrates router configuration, HSRP election, connectivity verification, failure simulation, and gateway recovery.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Understand the purpose and operation of HSRP.
 - Configure two routers for first-hop redundancy.
@@ -28,7 +28,7 @@ This project demonstrates router configuration, HSRP election, connectivity veri
 - Restore the failed router and verify recovery.
 - Develop practical Cisco IOS troubleshooting skills.
 
-## 🏗️ Network Topology
+## Network Topology
 
 The lab uses two Cisco 2911 routers, two Cisco 2960 switches, and four PCs.
 
@@ -66,7 +66,7 @@ The lab uses two Cisco 2911 routers, two Cisco 2960 switches, and four PCs.
 
 The diagram is a logical representation. In the actual Packet Tracer topology, both routers must connect to the same Layer 2 LAN or VLAN, and all PCs must be able to reach that shared network.
 
-## 🧰 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -79,7 +79,7 @@ The diagram is a logical representation. In the actual Packet Tracer topology, b
 | ICMP / Ping | Connectivity testing |
 | Ethernet | Device connectivity |
 
-## 🌐 IP Addressing Plan
+## IP Addressing Plan
 
 All devices use the `192.168.10.0/24` network.
 
@@ -95,7 +95,7 @@ All devices use the `192.168.10.0/24` network.
 
 **Default gateway for all PCs:** `192.168.10.1`
 
-## ⚙️ Network Configuration
+## Network Configuration
 
 ### 1. Configure R1 — Primary Router
 
@@ -215,7 +215,7 @@ Expected initial roles:
 
 The exact result depends on interface state, HSRP configuration, and successful communication between routers.
 
-## 🧪 Failover Testing
+## Failover Testing
 
 ### Test 1: Verify normal connectivity
 
@@ -291,7 +291,7 @@ copy running-config startup-config
 
 Accept the default destination filename when prompted.
 
-## 📊 Expected Results
+## Expected Results
 
 | Test | Expected Outcome |
 |---|---|
@@ -304,7 +304,7 @@ Accept the default destination filename when prompted.
 
 These are expected results for a correctly configured lab. Record your actual output and screenshots when testing.
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### HSRP does not form
 
@@ -338,7 +338,7 @@ Verify that both routers use the same HSRP group and virtual IP, are connected t
 
 Confirm that R1 has priority 110, `standby 1 preempt` is configured, its interface is operational, and the HSRP group has converged.
 
-## 📚 Concepts Learned
+## Concepts Learned
 
 - First-hop redundancy.
 - HSRP active and standby router roles.
@@ -350,7 +350,7 @@ Confirm that R1 has priority 110, `standby 1 preempt` is configured, its interfa
 - Gateway failover and recovery.
 - Cisco IOS verification and troubleshooting.
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Add a second VLAN and redundant gateways for additional subnets.
 - Introduce a Layer 3 routing protocol for upstream connectivity.
@@ -359,7 +359,7 @@ Confirm that R1 has priority 110, `standby 1 preempt` is configured, its interfa
 - Document convergence time and packet loss during failover.
 - Add screenshots and a test-results table based on actual observations.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Enterprise-HSRP-Network-Redundancy/
@@ -374,17 +374,17 @@ Enterprise-HSRP-Network-Redundancy/
 
 This is a suggested structure. Add only files and screenshots that you have created.
 
-## 👨‍💻 Author
+## Author
 
 **Andrews GnanaSelvin D**
 
 - GitHub: [Andrewsdavid2005](https://github.com/Andrewsdavid2005)
 - LinkedIn: [Andrews GnanaSelvin D](https://www.linkedin.com/in/andrews-gnana-selvin-d)
 
-## 📄 License
+## License
 
 This project is intended for educational and portfolio purposes. If you choose the MIT License, include a `LICENSE` file with the official MIT License text.
 
 ---
 
-⭐ If this project helped you understand HSRP and network redundancy, feel free to explore the configuration and suggest improvements.
+If this project helped you understand HSRP and network redundancy, feel free to explore the configuration and suggest improvements.
